@@ -25,7 +25,7 @@ def menu():
                    time.sleep(1)
                    os.system('clear')
                    print('')
-                   os.system('figlet ' + x e + ' | lolcat')
+                   os.system('figlet ' + x + ' | lolcat')
                    print('\033[1;92m ────────────────────────────────────── ')
                    print("")
                    break
