@@ -20,12 +20,12 @@ def menu():
                 print("")
                 e = getpass('\033[1;92mPassword \033[1;93m: ')
                 print ("")
-                if x=="END" and e=="TOOTH":
+                if x=="Santuy" and e=="Barbar":
                    print('wait...')
                    time.sleep(1)
                    os.system('clear')
                    print('')
-                   os.system('figlet mr.41l_kun-tools | lolcat')
+                   os.system('figlet SABAR | lolcat')
                    print('\033[1;92m ───────────────────── ')
                    print("")
                    time.sleep(2)
