@@ -38,7 +38,7 @@ def menu():
                       print("\033[1;91m     SALAH ASWW ಠ益ಠ")
                       time.sleep(2)
                       print("")
-                      except Exception:
+           except Exception:
 
                       print("")
                       print("")
