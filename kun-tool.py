@@ -25,10 +25,11 @@ def menu():
                    time.sleep(1)
                    os.system('clear')
                    print('')
-                   os.system('figlet SABAR | lolcat')
-                   print('\033[1;92m ───────────────────── ')
+                   os.system('figlet SABAR... | lolcat')
+                   print('\033[1;92m ───────────────────────────────────── ')
                    print("")
-                   time.sleep(2)
+                   print("")
+                   time.sleep(5)
                    break
                 else:
                       print("")
