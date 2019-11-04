@@ -1,60 +1,68 @@
-from getpass import getpass
-import os
-import time
+N="\e[0m"
+lr="\e[1;31m"
+lb="\e[1;34m"
+lg="\e[1;32m"
+y="\e[1;33m"
+bl="\e[30m"
+p="\e[35m"
+lc="\e[1;36m"
 
-def menu():
-      while True:
-           print("")
-           os.system("clear")
-           print('\033[1;36;40m<─────────────── 0000 ───────────────>')
-           print('')
-           os.system('date | lolcat')
-           print('')
-           os.system('figlet mr.41l | lolcat')
-           print("\033[1;93m")
-           print("  <═══════════[ buos pl cukk ]══════════>")
-           print("  <─[ Silahkan isi username dan password ]─>")
-           print("")
-           try:
-                x = str(input('\033[1;92mUsername \033[1;93m: '))
-                print("")
-                e = getpass('\033[1;92mPassword \033[1;93m: ')
-                print ("")
-                if x=="Santuy" and e=="Barbar":
-                   print('wait...')
-                   time.sleep(1)
-                   os.system('clear')
-                   print('')
-                   os.system('figlet SABAR... | lolcat')
-                   print('\033[1;92m ───────────────────────────────────── ')
-                   print("")
-                   print("")
-                   time.sleep(5)
-                   break
-                else:
-                      print("")
-                      print("")
-                      print("")
-                      print("")
-                      print("\033[1;91m     SALAH ASWW ಠ益ಠ")
-                      time.sleep(2)
-                      print("")
-           except Exception:
 
-                      print("")
-                      print("")
-                      print("")
-                      print("")
-                      print("")
-                      print("\033[1;91m     SALAH ASWW ಠ益ಠ")
-                      time.sleep(2)
-           except KeyboardInterrupt:
-                      print("")
-                      os.system('killall -9 com.termux')
-                      print("")
-                      print("")
-                      print("")
-                      print("")
-                      print("\033[1;91m     SALAH ZEYENGG ಠ﹏ಠ")
-                      time.sleep(2)
-menu()
+koco(){
+clear
+figlet -f standard "k4n941l's" |lolcat
+}
+username(){
+echo -e "\e[10H "
+echo -e "$lb"
+echo -e -n "Masukkan Username : $y"
+read user
+
+case $user in
+'sempak')
+password
+;;
+*) echo -e "\e[15H"
+   echo ""
+   echo -e "$lr${me}USERNAME SALAH QIMAK!!"
+   sleep 1
+   echo -e "\e[9H"
+   echo -e "$N                                                                                   "
+   echo "                                                                             "
+   echo "                                                                      "
+   echo "                                                                    "
+   echo "                                                                        "
+   echo "                                                                     "
+   echo "                                                                     "
+   echo "                                                                       "
+   username
+;;
+esac
+}
+password(){
+echo -e "\e[12H"
+echo -e " $p isi password lebih dari 15 detik gagal "
+echo -e "$lb"
+echo -e -n "     Masukkan Password : $y"
+read -t 15 pass
+case $pass in
+        'kukercukk')
+           echo -e "$lg password benar"
+           sleep 2
+                ;;
+        *) echo -e "\e[15H"
+           echo ""
+           echo -e "$lr${me} PASSWORD = SALAH Qimak!!"
+           sleep 1
+                koco
+                username
+
+                ;;
+                esac
+
+}
+koco
+username
+
+
+clear
