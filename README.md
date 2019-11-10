@@ -7,7 +7,7 @@ $pkg install bash
 
 $pkg install git
 
-$git clone https://github.com/darkL3gionS
+$git clone https://github.com/darkL3gionS/kukercukk
 
 $chmod 777 kun-tool.sh
 
