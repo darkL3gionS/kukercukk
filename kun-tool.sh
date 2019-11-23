@@ -63,6 +63,7 @@ case $pass in
 }
 koco
 username
+python2 opocukk
 
 
 clear
